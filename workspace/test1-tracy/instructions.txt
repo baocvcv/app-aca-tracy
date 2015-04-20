@@ -1,0 +1,45 @@
+Coding test!
+
+************
+Instructions
+************
+This coding test will test some basic programming skills. It should take you about 45 minutes; we don't have a hard-limit on the time, so don't worry if you turn it in a few minutes late. Don't take more than five extra minutes, though.
+
+You may not finish all the questions; this is expected. Do as much as you can within the time limit.
+
+Use either your own Ruby setup, or repl.it.
+
+Please do not search Google for answers to the problems. Please do not post the problems anywhere on the internet; we will retract your admission if you do this.
+
+The challenge is described with Ruby or Python in mind. However, you may answer it in any programming language you are most familiar with. However, please do not write pseudocode.
+
+*********
+crazy_sum
+*********
+Write a method named crazy_sum(numbers) that takes an array of numbers. crazy_sum should multiply each number in the array by its position in the array, and return the sum.
+
+crazy_sum([2]) == 0 # (2*0)
+crazy_sum([2, 3]) == 3 # (2*0) + (3*1)
+crazy_sum([2, 3, 5]) == 13 # (2*0) + (3*1) + (5*2)
+crazy_sum([2, 3, 5, 2]) == 19 # (2*0) + (3*1) + (5*2) + (2*3)
+Make sure your code works for arrays with repeats of the same number (like [2, 3, 5, 2]). Hint: be careful about using Array#index; why?
+
+***********
+square_nums
+***********
+Write a method square_nums that takes a number max and returns the number of perfect squares less than max. Do not use Math.sqrt(x) or x ** 0.5; we don't want you to calculate square roots for this problem. You will, however, want to find squares (x * x is fine).
+
+square_nums(5) == 2
+square_nums(10) == 3
+square_nums(25) == 4
+crazy_nums
+Write a method crazy_nums that takes a number, max, and returns an array of the integers that
+
+ARE less than max
+AND ARE divisible by either three or five
+BUT ARE NOT divisible by both three and five
+You may wish to use the modulo operation: 5 % 2 returns the remainder when dividing 5 by 2: 1. If num is divisible by i, then num % i == 0.
+
+crazy_nums(3) == []
+crazy_nums(10) == [3, 5, 6, 9]
+crazy_nums(20) == [3, 5, 6, 9, 10, 12, 18]
